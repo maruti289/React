@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="MainDiv">
+        <h1>Hello World From HTML</h1>
+    </div>
+
+
+    <script>
+        //Creating New Elemnt
+        const h2 = document.createElement('h2');
+        //Assgning the text to it
+        h2.innerText="Hello World From Javascript...!";
+        //Selecting Root Element
+        const slctElmnt = document.getElementById('MainDiv');
+        //Appending child to parent elemnet
+        slctElmnt.appendChild(h2);
+    </script>
+    <!-- <script>
+            //This Is Similiar like crate element
+            const h1 = React.createElement('h1',{id:"Heading",class:"MainClass"},"Hello World From React..!");
+            console.log(h1)
+            //Here We Are selecting Parent Elemnt MainDiv and appending the child element to that parent element
+            const root = ReactDOM.createRoot(document.getElementById('MainDiv'))
+            console.log(root)
+            root.render(h1);
+
+            const parent = React.createElement("div",{id:"DivId"},
+            React.createElement("DivChild",{id:"DivChild"},
+            React.createElement("h1",{id:"ChilId"},"This Is Child Element Created By React")))
+
+            root.render(parent);
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
